@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TIÊN ĐẠO® — L’Art de Nourrir la Vie</title>
+<meta name="description" content="TIÊN ĐẠO® : une philosophie, une expérience, une voie personnelle vers l’art de mieux vivre. Méthode holistique d’Eva Janosek.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--bg:#f6f1e7;--surface:#fffdf8;--ink:#22302a;--muted:#59675f;--accent:#3d6b55;--on-accent:#fff;--gold:#9a7634;--line:#e2dac8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131a16;--surface:#1b241f;--ink:#ece8dc;--muted:#a6b2aa;--accent:#8fc4a8;--on-accent:#10201a;--gold:#d3b06a;--line:#2b3731;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#131a16;--surface:#1b241f;--ink:#ece8dc;--muted:#a6b2aa;--accent:#8fc4a8;--on-accent:#10201a;--gold:#d3b06a;--line:#2b3731;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.8 Jost,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;margin:0}
+h2{font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:.6em}
+h3{font-size:1.5rem;color:var(--accent);margin-bottom:.3em}
+p{margin:0 0 1.1em}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:58px;max-width:960px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;font-weight:600;letter-spacing:.08em;text-decoration:none}
+nav{display:flex;align-items:center;gap:22px;font-size:.92rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+nav .btn{padding:8px 18px;color:var(--on-accent)}
+@media (max-width:760px){nav a:not(.btn){display:none}}
+.hero{text-align:center;padding:84px 0 72px;background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--accent) 18%,transparent),transparent 70%)}
+.eyebrow{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2em}
+.hero h1{font-size:clamp(3rem,13vw,5.4rem);letter-spacing:.07em;font-weight:500}
+.hero .sub{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(1.5rem,5vw,2rem);color:var(--gold);margin:.3em 0 .9em}
+.hero p.tag{max-width:30em;margin:0 auto 2em;color:var(--muted)}
+.hero .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.lead{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;line-height:1.35;color:var(--accent);margin-bottom:.8em}
+.poem{border-left:2px solid var(--gold);padding:4px 0 4px 20px;margin:1.6em 0}
+.poem p{margin:.15em 0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.35rem;line-height:1.5;color:var(--accent)}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;padding:22px 24px;margin:1.8em 0 0}
+.callout p:last-child{margin:0}
+.callout strong{font-weight:500;color:var(--accent)}
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:1.6em 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card p{margin:0;font-size:.97rem;color:var(--muted);line-height:1.65}
+.fact{text-align:center}
+.fact b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:2.6rem;font-weight:500;color:var(--gold);line-height:1}
+.fact span{font-size:.9rem;color:var(--muted)}
+.emph{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.4rem;color:var(--accent);line-height:1.4}
+.draft{border:1px dashed var(--gold);border-radius:12px;padding:14px 18px;color:var(--muted);font-size:.9rem;margin-top:1.6em}
+.contact{text-align:center}
+.contact .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:1.6em}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;text-align:center;font-size:.85rem;color:var(--muted)}
+footer p{margin:.2em 0}
+.L{display:none}html:not([data-l]) .L[lang="fr"],html[data-l="fr"] .L[lang="fr"],html[data-l="en"] .L[lang="en"],html[data-l="nl"] .L[lang="nl"]{display:block}
+.rt{display:flex;align-items:center;gap:22px}
+.lg{display:flex;gap:2px}
+.lg button{font:500 .72rem Jost,Arial,sans-serif;letter-spacing:.06em;border:1px solid var(--line);background:transparent;color:var(--muted);padding:5px 8px;border-radius:6px;cursor:pointer}
+.lg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.contact .btns{flex-direction:column;align-items:center;gap:6px}
+.ct{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.7rem,7vw,2.3rem);color:var(--accent);text-decoration:none;border-bottom:1px solid var(--gold);width:fit-content;margin:0}
+@media (max-width:760px){.brand{font-size:1.1rem}.rt{gap:10px}}
+</style>
+</head>
+<body>
+<div class="L" lang="fr">
+<header>
+<div class="wrap">
+<a class="brand" href="#top">TIÊN ĐẠO®</a>
+<div class="rt">
+<nav>
+<a href="#nourrir">Vision</a>
+<a href="#voie">Le nom</a>
+<a href="#ciel">Ciel · Être · Terre</a>
+<a href="#nature">Nature</a>
+<a class="btn" href="#contact">Contact</a>
+</nav>
+<div class="lg"><button data-l="fr">FR</button><button data-l="en">EN</button><button data-l="nl">NL</button></div>
+</div>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap">
+<p class="eyebrow">Méthode holistique · Eva Janosek</p>
+<h1>TIÊN ĐẠO®</h1>
+<p class="sub">L’Art de Nourrir la Vie</p>
+<p class="tag">Une philosophie, une expérience, une voie personnelle vers l’art de mieux vivre.</p>
+<div class="btns">
+<a class="btn" href="#nourrir">Découvrir la méthode</a>
+<a class="btn ghost" href="#contact">Prendre contact</a>
+</div>
+</div>
+</div>
+
+<section id="nourrir">
+<div class="wrap">
+<h2>Nourrir la Vie… dans toute sa richesse</h2>
+<p class="lead">Que signifie véritablement prendre soin de la Vie ?</p>
+<p>Est-ce entretenir son corps, préserver sa santé, rechercher l’équilibre ? Certainement. Mais est-ce suffisant ?</p>
+<p>Au fil de mon parcours, j’ai acquis la conviction que la vie ne se nourrit pas uniquement de ce qui nous maintient en bonne santé, mais aussi de tout ce qui nous fait grandir, vibrer, ressentir et nous épanouir.</p>
+<div class="poem">
+<p>Un corps que l’on apprend à écouter.</p>
+<p>Une émotion que l’on accueille.</p>
+<p>Une rencontre qui nous enrichit.</p>
+<p>Une musique qui nous transporte.</p>
+<p>Un parfum qui réveille un souvenir.</p>
+<p>Le plaisir de créer, d’apprendre, de découvrir…</p>
+</div>
+<p>Toutes ces expériences participent à cette merveilleuse complexité que nous appelons la Vie.</p>
+<div class="callout">
+<p><strong>C’est cette vision qui anime TIÊN ĐẠO® — L’Art de Nourrir la Vie.</strong></p>
+<p>Une méthode holistique personnelle, née de mon expérience de praticienne, de mes rencontres avec les traditions orientales et de mon désir de réunir différentes connaissances autour d’une même intention : accompagner l’être humain dans toutes ses dimensions, en respectant ce qui le rend profondément singulier.</p>
+</div>
+</div>
+</section>
+
+<section id="voie">
+<div class="wrap">
+<h2>Une Voie qui porte son propre nom</h2>
+<p>Lorsque j’ai commencé à élaborer TIÊN ĐẠO® en 2012, je souhaitais créer davantage qu’une méthode de soins.</p>
+<p>Je voulais transmettre une compréhension du corps, de l’être humain et de son rapport au monde.</p>
+<p>Le choix de son nom a constitué une étape importante. Avec l’aide d’une philologue vietnamienne, j’ai choisi deux mots porteurs de sens.</p>
+<div class="cards">
+<div class="card"><h3>Tiên</h3><p>Évoque les êtres féeriques et les immortels des traditions asiatiques.</p></div>
+<div class="card"><h3>Đạo</h3><p>Désigne la Voie, le chemin, dans sa dimension philosophique.</p></div>
+</div>
+<p>J’y ai inscrit ma sensibilité au féminin sacré, mon aspiration à l’élévation de la conscience et mon attachement à cette relation profonde qui unit l’être humain à la nature.</p>
+<div class="cards">
+<div class="card fact"><b>2012</b><span>Début de l’élaboration de la méthode</span></div>
+<div class="card fact"><b>2015</b><span>Dépôt de la marque TIÊN ĐẠO®</span></div>
+</div>
+<p>Depuis, ma méthode a continué d’évoluer, de s’enrichir et de s’ouvrir à de nouvelles dimensions de l’expérience humaine.</p>
+<p class="emph">Car une méthode véritablement vivante doit pouvoir grandir avec celle qui la porte.</p>
+</div>
+</section>
+
+<section id="ciel">
+<div class="wrap">
+<h2>Ciel – Être – Terre : l’intelligence du vivant</h2>
+<p>Il est une image qui accompagne particulièrement ma vision : celle de l’arbre.</p>
+<div class="cards">
+<div class="card"><h3>Ciel</h3><p>Ses branches s’élèvent librement vers le Ciel.</p></div>
+<div class="card"><h3>Être</h3><p>Son tronc lui donne force et stabilité.</p></div>
+<div class="card"><h3>Terre</h3><p>Ses racines plongent profondément dans la Terre.</p></div>
+</div>
+<p class="lead">L’être humain lui ressemble.</p>
+<p>Nous aspirons à comprendre, à évoluer, à développer notre conscience. Mais comment nous élever si nous avons perdu le contact avec nos propres fondations ?</p>
+<p>Dans TIÊN ĐẠO®, l’ancrage commence dans le corps. Dans les pieds qui rencontrent le sol, dans la fluidité du mouvement, dans la respiration, dans cette intelligence corporelle qui nous accompagne à chaque instant.</p>
+<p>Car notre corps n’est pas un simple instrument que l’esprit devrait diriger. Il possède sa propre intelligence. Il ressent, s’adapte, communique et participe à notre manière d’être au monde.</p>
+<p>Les exercices corporels, l’automassage, l’acupression, la respiration et la méditation nous invitent à renouer avec cette connaissance sensible.</p>
+<div class="callout">
+<p><strong>La conscience vient enrichir l’expérience du corps, non s’y substituer.</strong></p>
+<p>Ainsi, l’ancrage et l’élévation deviennent les deux expressions complémentaires d’un même cheminement.</p>
+</div>
+</div>
+</section>
+
+<section id="nature">
+<div class="wrap">
+<h2>L’art de vivre en accord avec la nature</h2>
+<p>La philosophie taoïste et le Yang Sheng occupent une place privilégiée dans TIÊN ĐẠO®. Ils nous invitent à cultiver la vie au quotidien, à accorder davantage d’attention à la prévention et à reconnaître que nous appartenons aux grands mouvements de la nature.</p>
+<div class="cards">
+<div class="card"><h3>Yin et Yang</h3><p>Ils nous enseignent l’alternance et la complémentarité.</p></div>
+<div class="card"><h3>Cinq Éléments</h3><p>La Roue des Cinq Éléments nous offre une lecture traditionnelle des cycles, des transformations et des correspondances entre les saisons.</p></div>
+<div class="card"><h3>Rythmes</h3><p>L’observation des rythmes biologiques nous rappelle l’importance du temps dans notre manière de vivre.</p></div>
+</div>
+<div class="poem">
+<p>Il existe un temps pour agir, un temps pour se reposer, un temps pour créer, un temps pour accueillir le changement.</p>
+</div>
+<p>Apprendre à reconnaître le moment juste, c’est découvrir une manière plus consciente de cultiver notre vitalité.</p>
+<p>Ces enseignements ont nourri mes créations personnelles, notamment un soin du visage et du crâne inspiré de la Roue des Cinq Éléments. Mais ils ne représentent qu’une partie de TIÊN ĐẠO®.</p>
+<p>Car ma recherche m’a progressivement conduite bien au-delà des seules traditions corporelles.</p>
+</div>
+</section>
+
+<section id="histoire">
+<div class="wrap">
+<h2>Ce qui nous habite, ce qui nous relie</h2>
+<p class="lead">Nous portons en nous une histoire qui ne commence pas toujours avec nous.</p>
+<p>Notre famille, notre éducation, nos expériences et nos relations participent à notre manière de nous construire.</p>
+<p>L’étude de la bio-psychogénéalogie nous invite à regarder avec bienveillance ce que nous avons reçu en héritage : des histoires, des loyautés, des silences, mais aussi des forces, des talents et des gestes transmis sans que personne ne les nomme.</p>
+<p>Comme l’arbre, l’être humain possède des racines que l’on ne voit pas. Les explorer, c’est comprendre un peu mieux d’où l’on vient, et s’offrir la liberté de choisir où l’on va.</p>
+<div class="poem">
+<p>Honorer ce qui a été.</p>
+<p>Libérer ce qui pèse.</p>
+<p>Transmettre ce qui est vivant.</p>
+</div>
+<p>Il ne s’agit ni de chercher des coupables, ni de s’enfermer dans le passé, mais de remettre chacun à sa juste place, afin que la vie circule à nouveau, plus légère.</p>
+<div class="callout">
+<p><strong>Corps, nature, mémoire des lignées : TIÊN ĐẠO® tisse ces fils en une seule Voie.</strong></p>
+<p>Celle d’une Vie qui se nourrit de tout ce qui la traverse. Une Voie qui n’appartient à personne et qui s’ouvre à chacun, à son rythme, avec sa propre singularité.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+<h2>Prendre contact</h2>
+<p>Soins, formations, ateliers : pour toute question ou prise de rendez-vous, écrivez-moi ou appelez-moi.</p>
+<div class="btns">
+<a class="ct" href="tel:+32478447362" target="_blank" rel="noopener">0478 44 73 62</a>
+<a class="ct" href="mailto:eva.janosek69@gmail.com" target="_blank" rel="noopener">eva.janosek69@gmail.com</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<p>Eva Janosek — thérapeute, formatrice et créatrice de la Méthode Tiên Đạo</p>
+<p>TIÊN ĐẠO® — marque déposée en 2015</p>
+<p>Les soins proposés ne remplacent pas un suivi médical.</p>
+</div>
+</footer>
+</div>
+
+<div class="L" lang="en">
+<header><div class="wrap">
+<a class="brand" href="#top-en">TIÊN ĐẠO®</a>
+<div class="rt"><nav>
+<a href="#nourrir-en">Vision</a><a href="#voie-en">The name</a><a href="#ciel-en">Sky · Being · Earth</a><a href="#nature-en">Nature</a><a class="btn" href="#contact-en">Contact</a>
+</nav>
+<div class="lg"><button data-l="fr">FR</button><button data-l="en">EN</button><button data-l="nl">NL</button></div></div>
+</div></header>
+<main id="top-en">
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Holistic method · Eva Janosek</p>
+<h1>TIÊN ĐẠO®</h1>
+<p class="sub">The Art of Nourishing Life</p>
+<p class="tag">A philosophy, an experience, a personal path toward the art of living well.</p>
+<div class="btns"><a class="btn" href="#nourrir-en">Discover the method</a><a class="btn ghost" href="#contact-en">Get in touch</a></div>
+</div></div>
+<section id="nourrir-en"><div class="wrap">
+<h2>Nourishing Life… in all its richness</h2>
+<p class="lead">What does it truly mean to take care of Life?</p>
+<p>Is it looking after the body, protecting one’s health, seeking balance? Certainly. But is that enough?</p>
+<p>Along my journey, I have come to believe that life is nourished not only by what keeps us healthy, but by everything that helps us grow, vibrate, feel and flourish.</p>
+<div class="poem"><p>A body we learn to listen to.</p><p>An emotion we welcome.</p><p>An encounter that enriches us.</p><p>Music that carries us away.</p><p>A scent that awakens a memory.</p><p>The joy of creating, learning, discovering…</p></div>
+<p>All these experiences are part of the marvellous complexity we call Life.</p>
+<div class="callout"><p><strong>This is the vision behind TIÊN ĐẠO® — The Art of Nourishing Life.</strong></p>
+<p>A personal holistic method, born from my experience as a practitioner, my encounters with Eastern traditions and my wish to bring different kinds of knowledge together around a single intention: to support the human being in all dimensions, while respecting what makes each person profoundly unique.</p></div>
+</div></section>
+<section id="voie-en"><div class="wrap">
+<h2>A Path with a name of its own</h2>
+<p>When I began developing TIÊN ĐẠO® in 2012, I wanted to create more than a method of treatments.</p>
+<p>I wanted to pass on an understanding of the body, of the human being and of our relationship with the world.</p>
+<p>Choosing its name was an important step. With the help of a Vietnamese philologist, I chose two meaningful words.</p>
+<div class="cards"><div class="card"><h3>Tiên</h3><p>Evokes the fairy beings and the immortals of Asian traditions.</p></div><div class="card"><h3>Đạo</h3><p>Means the Way, the path, in its philosophical dimension.</p></div></div>
+<p>Into it I put my sensitivity to the sacred feminine, my aspiration to raise consciousness and my deep attachment to the bond between human beings and nature.</p>
+<div class="cards"><div class="card fact"><b>2012</b><span>Development of the method begins</span></div><div class="card fact"><b>2015</b><span>TIÊN ĐẠO® trademark registered</span></div></div>
+<p>Since then, my method has kept evolving, growing richer and opening up to new dimensions of human experience.</p>
+<p class="emph">For a truly living method must be able to grow with the person who carries it.</p>
+</div></section>
+<section id="ciel-en"><div class="wrap">
+<h2>Sky – Being – Earth: the intelligence of the living</h2>
+<p>One image particularly accompanies my vision: that of the tree.</p>
+<div class="cards"><div class="card"><h3>Sky</h3><p>Its branches rise freely toward the Sky.</p></div><div class="card"><h3>Being</h3><p>Its trunk gives it strength and stability.</p></div><div class="card"><h3>Earth</h3><p>Its roots reach deep into the Earth.</p></div></div>
+<p class="lead">The human being is like it.</p>
+<p>We long to understand, to evolve, to develop our consciousness. But how can we rise if we have lost touch with our own foundations?</p>
+<p>In TIÊN ĐẠO®, grounding begins in the body. In the feet that meet the ground, in the fluidity of movement, in the breath, in the bodily intelligence that accompanies us at every moment.</p>
+<p>For our body is not a mere instrument for the mind to direct. It has its own intelligence. It feels, adapts, communicates and shapes the way we are in the world.</p>
+<p>Body exercises, self-massage, acupressure, breathing and meditation invite us to reconnect with this sensitive knowing.</p>
+<div class="callout"><p><strong>Awareness enriches the experience of the body; it does not replace it.</strong></p><p>Grounding and elevation thus become two complementary expressions of one and the same journey.</p></div>
+</div></section>
+<section id="nature-en"><div class="wrap">
+<h2>The art of living in harmony with nature</h2>
+<p>Taoist philosophy and Yang Sheng hold a special place in TIÊN ĐẠO®. They invite us to cultivate life day by day, to pay more attention to prevention, and to recognise that we belong to the great movements of nature.</p>
+<div class="cards"><div class="card"><h3>Yin and Yang</h3><p>They teach us alternation and complementarity.</p></div><div class="card"><h3>Five Elements</h3><p>The Wheel of the Five Elements offers a traditional reading of cycles, transformations and the correspondences between the seasons.</p></div><div class="card"><h3>Rhythms</h3><p>Observing biological rhythms reminds us how much time matters in the way we live.</p></div></div>
+<div class="poem"><p>There is a time to act, a time to rest, a time to create, a time to welcome change.</p></div>
+<p>Learning to recognise the right moment is discovering a more conscious way of cultivating our vitality.</p>
+<p>These teachings have nourished my own creations, notably a face and scalp treatment inspired by the Wheel of the Five Elements. But they are only one part of TIÊN ĐẠO®.</p>
+<p>For my research has gradually led me far beyond bodily traditions alone.</p>
+</div></section>
+<section id="histoire-en"><div class="wrap">
+<h2>What dwells within us, what connects us</h2>
+<p class="lead">We carry within us a story that does not always begin with us.</p>
+<p>Our family, our upbringing, our experiences and our relationships all shape the way we build ourselves.</p>
+<p>The study of bio-psychogenealogy invites us to look with kindness at what we have received as a legacy: stories, loyalties, silences, but also strengths, talents and gestures passed on without anyone naming them.</p>
+<p>Like the tree, the human being has roots that cannot be seen. To explore them is to understand a little better where we come from, and to give ourselves the freedom to choose where we are going.</p>
+<div class="poem"><p>Honour what has been.</p><p>Release what weighs.</p><p>Pass on what is alive.</p></div>
+<p>It is not about looking for culprits or locking ourselves in the past, but about putting everyone back in their rightful place, so that life can flow again, lighter.</p>
+<div class="callout"><p><strong>Body, nature, memory of the lineages: TIÊN ĐẠO® weaves these threads into one single Path.</strong></p><p>That of a Life nourished by everything that passes through it. A Path that belongs to no one and is open to everyone, at their own pace, in their own singularity.</p></div>
+</div></section>
+<section id="contact-en" class="contact"><div class="wrap">
+<h2>Get in touch</h2>
+<p>Treatments, trainings, workshops: for any question or appointment, write or call me.</p>
+<div class="btns"><a class="ct" href="tel:+32478447362" target="_blank" rel="noopener">0478 44 73 62</a><a class="ct" href="mailto:eva.janosek69@gmail.com" target="_blank" rel="noopener">eva.janosek69@gmail.com</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><p>Eva Janosek — therapist, trainer and creator of the Tiên Đạo Method</p><p>TIÊN ĐẠO® — registered trademark since 2015</p><p>The treatments offered do not replace medical care.</p></div></footer>
+</div>
+
+<div class="L" lang="nl">
+<header><div class="wrap">
+<a class="brand" href="#top-nl">TIÊN ĐẠO®</a>
+<div class="rt"><nav>
+<a href="#nourrir-nl">Visie</a><a href="#voie-nl">De naam</a><a href="#ciel-nl">Hemel · Zijn · Aarde</a><a href="#nature-nl">Natuur</a><a class="btn" href="#contact-nl">Contact</a>
+</nav>
+<div class="lg"><button data-l="fr">FR</button><button data-l="en">EN</button><button data-l="nl">NL</button></div></div>
+</div></header>
+<main id="top-nl">
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Holistische methode · Eva Janosek</p>
+<h1>TIÊN ĐẠO®</h1>
+<p class="sub">De Kunst om het Leven te Voeden</p>
+<p class="tag">Een filosofie, een ervaring, een persoonlijke weg naar de kunst van het goed leven.</p>
+<div class="btns"><a class="btn" href="#nourrir-nl">Ontdek de methode</a><a class="btn ghost" href="#contact-nl">Neem contact op</a></div>
+</div></div>
+<section id="nourrir-nl"><div class="wrap">
+<h2>Het Leven voeden… in al zijn rijkdom</h2>
+<p class="lead">Wat betekent het echt om voor het Leven te zorgen?</p>
+<p>Is het je lichaam onderhouden, je gezondheid beschermen, evenwicht zoeken? Zeker. Maar is dat voldoende?</p>
+<p>Gaandeweg ben ik ervan overtuigd geraakt dat het leven niet alleen gevoed wordt door wat ons gezond houdt, maar ook door alles wat ons doet groeien, trillen, voelen en openbloeien.</p>
+<div class="poem"><p>Een lichaam waarnaar we leren luisteren.</p><p>Een emotie die we verwelkomen.</p><p>Een ontmoeting die ons verrijkt.</p><p>Muziek die ons meevoert.</p><p>Een geur die een herinnering wakker maakt.</p><p>De vreugde van creëren, leren en ontdekken…</p></div>
+<p>Al die ervaringen maken deel uit van de wonderlijke complexiteit die we het Leven noemen.</p>
+<div class="callout"><p><strong>Deze visie ligt aan de basis van TIÊN ĐẠO® — De Kunst om het Leven te Voeden.</strong></p>
+<p>Een persoonlijke holistische methode, geboren uit mijn ervaring als praktijkbeoefenaar, mijn ontmoetingen met oosterse tradities en mijn verlangen om verschillende kennisvelden te verenigen rond één intentie: de mens begeleiden in al zijn dimensies, met respect voor wat hem zo uniek maakt.</p></div>
+</div></section>
+<section id="voie-nl"><div class="wrap">
+<h2>Een Weg met een eigen naam</h2>
+<p>Toen ik in 2012 begon met het ontwikkelen van TIÊN ĐẠO®, wilde ik meer creëren dan een behandelmethode.</p>
+<p>Ik wilde een inzicht doorgeven in het lichaam, in de mens en in zijn verhouding tot de wereld.</p>
+<p>De keuze van de naam was een belangrijke stap. Met de hulp van een Vietnamese filologe koos ik twee woorden vol betekenis.</p>
+<div class="cards"><div class="card"><h3>Tiên</h3><p>Verwijst naar de feeënwezens en de onsterfelijken uit de Aziatische tradities.</p></div><div class="card"><h3>Đạo</h3><p>Betekent de Weg, het pad, in zijn filosofische dimensie.</p></div></div>
+<p>Daarin heb ik mijn gevoeligheid voor het heilige vrouwelijke gelegd, mijn streven naar een verheven bewustzijn en mijn diepe verbondenheid met de band tussen mens en natuur.</p>
+<div class="cards"><div class="card fact"><b>2012</b><span>Begin van de ontwikkeling van de methode</span></div><div class="card fact"><b>2015</b><span>Het merk TIÊN ĐẠO® wordt gedeponeerd</span></div></div>
+<p>Sindsdien is mijn methode blijven evolueren, zich blijven verrijken en zich blijven openen voor nieuwe dimensies van de menselijke ervaring.</p>
+<p class="emph">Want een echt levende methode moet kunnen groeien met degene die haar draagt.</p>
+</div></section>
+<section id="ciel-nl"><div class="wrap">
+<h2>Hemel – Zijn – Aarde: de intelligentie van het levende</h2>
+<p>Eén beeld begeleidt mijn visie in het bijzonder: dat van de boom.</p>
+<div class="cards"><div class="card"><h3>Hemel</h3><p>Zijn takken reiken vrij naar de Hemel.</p></div><div class="card"><h3>Zijn</h3><p>Zijn stam geeft hem kracht en stabiliteit.</p></div><div class="card"><h3>Aarde</h3><p>Zijn wortels reiken diep in de Aarde.</p></div></div>
+<p class="lead">De mens lijkt erop.</p>
+<p>We verlangen ernaar te begrijpen, te evolueren, ons bewustzijn te ontwikkelen. Maar hoe kunnen we ons verheffen als we het contact met onze eigen fundamenten kwijt zijn?</p>
+<p>In TIÊN ĐẠO® begint de verankering in het lichaam. In de voeten die de grond raken, in de soepelheid van de beweging, in de ademhaling, in die lichamelijke intelligentie die ons elk moment vergezelt.</p>
+<p>Want ons lichaam is geen eenvoudig instrument dat de geest zou moeten aansturen. Het heeft een eigen intelligentie. Het voelt, past zich aan, communiceert en bepaalt mee hoe we in de wereld staan.</p>
+<p>Lichaamsoefeningen, zelfmassage, acupressuur, ademhaling en meditatie nodigen ons uit om opnieuw contact te maken met die voelende kennis.</p>
+<div class="callout"><p><strong>Bewustzijn verrijkt de ervaring van het lichaam, het vervangt haar niet.</strong></p><p>Zo worden verankering en verheffing twee elkaar aanvullende uitdrukkingen van dezelfde weg.</p></div>
+</div></section>
+<section id="nature-nl"><div class="wrap">
+<h2>De kunst om in harmonie met de natuur te leven</h2>
+<p>De taoïstische filosofie en Yang Sheng nemen een bijzondere plaats in binnen TIÊN ĐẠO®. Ze nodigen ons uit het leven dagelijks te cultiveren, meer aandacht te hebben voor preventie en te erkennen dat we deel uitmaken van de grote bewegingen van de natuur.</p>
+<div class="cards"><div class="card"><h3>Yin en Yang</h3><p>Ze leren ons afwisseling en wisselwerking.</p></div><div class="card"><h3>Vijf Elementen</h3><p>Het Wiel van de Vijf Elementen biedt een traditionele lezing van cycli, transformaties en overeenkomsten tussen de seizoenen.</p></div><div class="card"><h3>Ritmes</h3><p>Het observeren van biologische ritmes herinnert ons aan het belang van tijd in onze manier van leven.</p></div></div>
+<div class="poem"><p>Er is een tijd om te handelen, een tijd om te rusten, een tijd om te creëren, een tijd om verandering te verwelkomen.</p></div>
+<p>Het juiste moment leren herkennen is een bewustere manier ontdekken om onze vitaliteit te cultiveren.</p>
+<p>Deze leringen hebben mijn eigen creaties gevoed, met name een gezichts- en schedelbehandeling geïnspireerd op het Wiel van de Vijf Elementen. Maar ze vormen slechts een deel van TIÊN ĐẠO®.</p>
+<p>Want mijn zoektocht heeft mij geleidelijk veel verder gebracht dan de lichamelijke tradities alleen.</p>
+</div></section>
+<section id="histoire-nl"><div class="wrap">
+<h2>Wat in ons woont, wat ons verbindt</h2>
+<p class="lead">We dragen een verhaal in ons dat niet altijd met ons begint.</p>
+<p>Onze familie, onze opvoeding, onze ervaringen en onze relaties bepalen mee hoe we ons ontwikkelen.</p>
+<p>De studie van de bio-psychogenealogie nodigt ons uit om met welwillendheid te kijken naar wat we als erfenis hebben ontvangen: verhalen, loyaliteiten, stiltes, maar ook krachten, talenten en gebaren die worden doorgegeven zonder dat iemand ze benoemt.</p>
+<p>Net als de boom heeft de mens wortels die je niet ziet. Ze verkennen is een beetje beter begrijpen waar je vandaan komt, en jezelf de vrijheid geven te kiezen waar je naartoe gaat.</p>
+<div class="poem"><p>Eren wat geweest is.</p><p>Bevrijden wat zwaar weegt.</p><p>Doorgeven wat levend is.</p></div>
+<p>Het gaat er niet om schuldigen te zoeken of ons in het verleden op te sluiten, maar om ieder op zijn juiste plaats te zetten, zodat het leven weer kan stromen, lichter.</p>
+<div class="callout"><p><strong>Lichaam, natuur, geheugen van de lijnen: TIÊN ĐẠO® weeft deze draden tot één Weg.</strong></p><p>Die van een Leven dat gevoed wordt door alles wat het doorkruist. Een Weg die van niemand is en voor iedereen openstaat, in eigen tempo en met eigen eigenheid.</p></div>
+</div></section>
+<section id="contact-nl" class="contact"><div class="wrap">
+<h2>Neem contact op</h2>
+<p>Behandelingen, opleidingen, workshops: voor al uw vragen of afspraken, schrijf of bel mij.</p>
+<div class="btns"><a class="ct" href="tel:+32478447362" target="_blank" rel="noopener">0478 44 73 62</a><a class="ct" href="mailto:eva.janosek69@gmail.com" target="_blank" rel="noopener">eva.janosek69@gmail.com</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><p>Eva Janosek — therapeute, opleidster en bedenkster van de Tiên Đạo-methode</p><p>TIÊN ĐẠO® — gedeponeerd merk sinds 2015</p><p>De aangeboden behandelingen vervangen geen medische zorg.</p></div></footer>
+</div>
+
+<script>
+(function(){var d=document.documentElement,K='td-lang',L=['fr','en','nl'];
+function set(l){d.setAttribute('data-l',l);d.lang=l;try{localStorage.setItem(K,l)}catch(e){}
+document.querySelectorAll('.lg button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)})}
+document.addEventListener('click',function(e){var b=e.target.closest('.lg button');if(b){set(b.dataset.l);window.scrollTo(0,0)}});
+var s=null;try{s=localStorage.getItem(K)}catch(e){}
+if(!s)s=(navigator.language||'fr').slice(0,2);
+set(L.indexOf(s)>-1?s:'fr');})();
+</script>
+</body>
+</html>
